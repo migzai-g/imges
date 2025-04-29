@@ -178,4 +178,12 @@ body {
     margin-right: 6px;
     stroke-width: 2;
   }
+
+/* Garantir que as imagens não ultrapassem os limites de seu container */
+img {
+  max-width: 100%;  /* Garante que a imagem ocupe no máximo 100% do espaço disponível */
+  height: auto; /* Mantém a proporção original da imagem */
+  object-fit: cover;  /* Faz com que a imagem cubra o container sem distorcer */
+}
+
   
