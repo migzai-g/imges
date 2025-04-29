@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galeria com Pastas</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <header>
+    <h1>Minha Galeria</h1>
+    
+    <div class="controls">
+      <input type="text" id="newFolderName" placeholder="Nova pasta" />
+      <button id="createFolderBtn">
+        <i data-lucide="folder-plus"></i> Criar Pasta
+      </button>
+
+      <select id="folderSelect"></select>
+    </div>
+
+    <div class="upload-form">
+      <input type="file" id="imageUpload" accept="image/*" multiple />
+      <input type="text" id="imageTitle" placeholder="Título da imagem" />
+      <button id="addImageBtn">
+        <i data-lucide="upload-cloud"></i> Adicionar Imagem
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <div class="image-container" id="imageContainer"></div>
+  </main>
+
+  <div class="fullscreen-img" id="fullscreen">
+    <img id="fullscreen-img" src="" alt="Imagem em Tela Cheia" />
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
